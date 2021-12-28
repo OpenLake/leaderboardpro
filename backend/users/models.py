@@ -8,6 +8,8 @@ class User(AbstractUser):
     email = models.CharField(max_length=255, unique=True)
     password = models.CharField(max_length=255)
     username = None
+    #codeforces_username
+    cf_handle = models.CharField(max_length=255, unique=True, blank=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []

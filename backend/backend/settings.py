@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'users',
+    'codeforces',
 ]
 
 MIDDLEWARE = [
@@ -81,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'LeaderboardPro',
-        'USER': 'root',
-        'PASSWORD': 'rootroot'
+        'USER': 'user',
+        'PASSWORD': 'password'
     }
 }
 
